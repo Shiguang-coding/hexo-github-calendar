@@ -2,6 +2,8 @@
 
 在 Hexo 博客中显示 GitHub 贡献度热力图的插件。
 
+![image-20260616163049977](https://img.shiguang666.eu.org/file/1781598658400_20260616163050866.webp)
+
 基于 [Barry-Flynn/hexo-github-calendar](https://github.com/Barry-Flynn/hexo-github-calendar) 修复，原项目 fork 自 [Zfour/hexo-github-calendar](https://github.com/Zfour/hexo-github-calendar)。
 
 ## 相对上游的改动
