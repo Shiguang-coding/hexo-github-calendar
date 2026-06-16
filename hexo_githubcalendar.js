@@ -85,10 +85,10 @@ var responsiveChart = () => {
           github_calendar_ctx.fillText("二", 0, 3.9 * linemaxwitdh);
           github_calendar_ctx.fillText("四", 0, 5.9 * linemaxwitdh);
           github_calendar_ctx.fillText("六", 0, 7.9 * linemaxwitdh);
-          var monthindexlist = github_calendar_c.width / 24;
+          var monthindexlist = width / 24;
           for (var index in git_monthchange) {
             github_calendar_ctx.fillText(git_monthchange[index], monthindexlist, 0.7 * linemaxwitdh);
-            monthindexlist = monthindexlist + github_calendar_c.width / 12
+            monthindexlist = monthindexlist + width / 12
           }
         }
         github_calendar_c.onmousemove = function (event) {
@@ -105,8 +105,8 @@ var responsiveChart = () => {
 
         var getMousePos = (canvas, event) => {
           var rect = canvas.getBoundingClientRect();
-          var x = event.clientX - rect.left * (canvas.width / rect.width);
-          var y = event.clientY - rect.top * (canvas.height / rect.height);
+          var x = event.clientX - rect.left;
+          var y = event.clientY - rect.top;
           for (var item of git_positionplusdata) {
             var lenthx = x - item.x;
             var lenthy = y - item.y;

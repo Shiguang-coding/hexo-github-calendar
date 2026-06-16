@@ -101,8 +101,8 @@ var github_canlendar = (git_user, git_color) => {
 
         function getMousePos(canvas, event) {
             var rect = canvas.getBoundingClientRect();
-            var x = event.clientX - rect.left * (canvas.width / rect.width);
-            var y = event.clientY - rect.top * (canvas.height / rect.height);
+            var x = event.clientX - rect.left;
+            var y = event.clientY - rect.top;
             for (var item of git_positionplusdata) {
                 var lenthx = x - item.x;
                 var lenthy = y - item.y;
