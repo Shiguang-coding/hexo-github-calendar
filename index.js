@@ -1,7 +1,7 @@
 /**
  * Hexo Github Canlendar
- * Author: Barry-Flynn
- * Link：https://github.com/Barry-Flynn/hexo-github-calendar
+ * Author: Shiguang-coding (forked from Barry-Flynn)
+ * Link：https://github.com/Shiguang-coding/hexo-github-calendar
  */
 
 'use strict'
@@ -60,7 +60,7 @@ hexo.extend.filter.register('after_generate',function(){
             var parent_div_git = ${get_layout};
             var git_div_html = '${githubcalendar_html}';
             if(parent_div_git && location.pathname =='${calendar_enable_page}'){
-                console.log("已挂载hexo-github-calendar https://github.com/Barry-Flynn/hexo-github-calendar");
+                console.log("已挂载hexo-github-calendar https://github.com/Shiguang-coding/hexo-github-calendar");
                 // parent_div_git.innerHTML=git_div_html+parent_div_git.innerHTML // 无报错，但不影响使用(支持pjax跳转)
                 parent_div_git.insertAdjacentHTML("afterbegin",git_div_html) // 有报错，但不影响使用(支持pjax跳转)
             };
